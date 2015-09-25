@@ -1,0 +1,20 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AppBundle:Pret:pret{% endblock %}
+
+{% block body %}
+
+    <div class="row">
+        <h1>Fiche Pret</h1>
+
+        <div class="list-group">
+            <div id="blue" class="list-group-item active">
+                {{ pret.name }}
+                <span class="badge">100 Places</span>
+            </div>
+            <div class="list-group-item">
+                {{ pret.description }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
